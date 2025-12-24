@@ -1,0 +1,126 @@
+
+<html>
+<head>
+    <title>Cute Lamp Login</title>
+    <style>
+        :root {
+            --tongue: #ff6b6b;
+            --cord: #444;
+            --glow: rgba(0, 255, 0, 0.4);
+        }
+
+        body {
+            background-color: #050505;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        
+        .lamp {
+            height: 40vmin; 
+            overflow: visible !important; 
+            display: block; 
+            margin-bottom: -20px;
+            z-index: 1;
+        }
+
+        .cord {
+            stroke: var(--cord); 
+            stroke-width: 2;
+        }
+
+        .cord--rig {
+            display: none; 
+        }
+
+        .lamp__tongue {
+            fill: var(--tongue); 
+        }
+
+        .login-form {
+            background: #111;
+            padding: 40px;
+            border-radius: 20px;
+            width: 300px;
+            text-align: center;
+            border: 1px solid rgba(0, 255, 0, 0.1);
+            box-shadow: 0 0 30px var(--glow);
+            position: relative;
+            z-index: 2;
+        }
+
+        h2 { margin-bottom: 25px; font-weight: 300; }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background: #222;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .loginbtn {
+            width: 100%;
+            padding: 12px;
+            background-color: #2e7d32; 
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: transform 0.1s;
+        }
+
+        .loginbtn:active {
+            transform: translateY(0); 
+        }
+
+        .form-footer {
+            margin-top: 1.5rem; 
+            text-align: center;
+        }
+
+        .forget-link {
+            color: #888; 
+            font-size: 0.9rem; 
+            text-decoration: none;
+            transition: all 0.3s ease; 
+        }
+
+        .forget-link:hover {
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+    <svg class="lamp" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="20" fill="#7a8c7a" /> 
+        <circle cx="45" cy="45" r="2" fill="black" />
+         <circle cx="55" cy="45" r="2" fill="black" /> 
+         <path class="lamp__tongue" d="M 47 55 Q 50 60 53 55" /> 
+         </svg>
+
+    <div class="login-form">
+        <h2>Welcome Back</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button class="loginbtn">Login</button>
+        <div class="form-footer">
+            <a href="#" class="forget-link">Forgot Password?</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+        
