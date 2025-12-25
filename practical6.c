@@ -9,7 +9,7 @@ for(int i=a; i<=b; i++){
 }
 //sum of even numbers using continue 
  int n, sum = 0;
-    printf("Enter limit: ");
+    printf(" Enter limit:  \n");
     scanf("%d", &n);
 
     for(int i = 1; i <= n; i++) {
@@ -18,11 +18,11 @@ for(int i=a; i<=b; i++){
         sum += i;
     }
 
-    printf("Sum of even numbers = %d", sum);
+    printf("Sum of even numbers = %d\n", sum);
     // ATM pin authentication 
       int pin, correctPin = 1234;
 
-    printf("Enter ATM PIN: ");
+    printf(" Enter ATM PIN: ");
     scanf("%d", &pin);
 
     if(pin == correctPin)
